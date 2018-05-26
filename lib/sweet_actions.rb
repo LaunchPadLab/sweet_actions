@@ -22,35 +22,8 @@ require 'sweet_actions/exceptions'
 # base classes
 require 'sweet_actions/action_factory'
 require 'sweet_actions/action'
-
-# concerns
-require 'sweet_actions/authorization'
-require 'sweet_actions/resource'
-require 'sweet_actions/serialize'
-
-# rest
-require 'sweet_actions/rest/base'
-require 'sweet_actions/rest/singular'
-require 'sweet_actions/rest/multiple'
-require 'sweet_actions/rest/find'
-require 'sweet_actions/rest/save'
-require 'sweet_actions/rest/read'
-require 'sweet_actions/rest/collect'
-require 'sweet_actions/rest/create'
-require 'sweet_actions/rest/update'
-require 'sweet_actions/rest/show'
-require 'sweet_actions/rest/destroy'
-
-# json
-require 'sweet_actions/json/base_action'
-require 'sweet_actions/json/collect_action'
-require 'sweet_actions/json/create_action'
-require 'sweet_actions/json/update_action'
-require 'sweet_actions/json/show_action'
-require 'sweet_actions/json/destroy_action'
+require 'sweet_actions/json_action'
 
 # helpers
 require 'sweet_actions/controller_concerns'
 require 'sweet_actions/routes_helpers'
-
-require 'sweet_actions/railtie' if defined?(::Rails)

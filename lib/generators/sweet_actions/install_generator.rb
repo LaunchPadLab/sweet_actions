@@ -7,11 +7,6 @@ module SweetActions
 
       def copy_initializer
         copy_file 'initializer.rb', 'config/initializers/sweet_actions.rb'
-        copy_file 'collect_action.rb', 'app/actions/collect_action.rb'
-        copy_file 'create_action.rb', 'app/actions/create_action.rb'
-        copy_file 'destroy_action.rb', 'app/actions/destroy_action.rb'
-        copy_file 'show_action.rb', 'app/actions/show_action.rb'
-        copy_file 'update_action.rb', 'app/actions/update_action.rb'
       end
     end
   end

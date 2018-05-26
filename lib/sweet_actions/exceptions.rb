@@ -1,7 +1,5 @@
 module SweetActions
   module Exceptions
-    class NotAuthorized < StandardError; end
-
     class ActionNotFound < StandardError
       attr_reader :path, :class_name
 
