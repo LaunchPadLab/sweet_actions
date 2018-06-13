@@ -8,7 +8,6 @@ Controller actions (`events#create`) tend to have more in common with their cous
 ### 1. Install Gem
 
 Gemfile:
-
 ```ruby
 gem 'sweet_actions'
 ```

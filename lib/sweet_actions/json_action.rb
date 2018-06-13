@@ -1,7 +1,5 @@
 module SweetActions
   class JSONAction < Action
-    include Serialize
-
     attr_reader :response_data, :response_code
 
     def perform_action

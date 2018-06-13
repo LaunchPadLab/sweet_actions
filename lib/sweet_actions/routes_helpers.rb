@@ -12,15 +12,15 @@ def create_sweet_actions(resource, options = {})
   namespace = options.fetch(:namespace, nil)
   singular = resource.to_s.singularize
   resource_class = singular.classify
-  actions = %i[collect show create update destroy]
+  actions = %i[index show create update destroy]
   only = options.fetch(:only, actions)
   base_path = "#{path}#{resource}"
 
   options = options.merge(resource_name: resource_class, namespace: namespace)
 
-  if only.include?(:collect) || only.include?(:index)
-    create_sweet_action(:get, base_path, :collect, options)
-  end
+  if only.include?(:index)
+    create_sweet_action(:get, base_path, :index, options)
+  end  
 
   if only.include?(:show)
     create_sweet_action(:get, "#{base_path}/:id", :show, options)
